@@ -1,0 +1,318 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    background: url('travel\ guide.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+    font-size: 4rem;
+    z-index: 1;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    z-index: 1;
+}
+
+header a {
+    padding: 0.8rem 1.5rem;
+    background: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 1;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Header with Image Slider */
+#image-slider {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 300%; /* Adjust based on the number of images */
+    height: 100%;
+    animation: slide-animation 3s infinite linear; /* Adjust timing for smooth transitions */
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Overlay for text readability */
+#image-slider .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+/* Content inside the header */
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.header-content a {
+    padding: 0.8rem 1.5rem;
+    background: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Slider container */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust to the desired height */
+    overflow: hidden;
+    background-color: #f5f5f5; /* Fallback color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Slider with animation */
+.slider {
+    display: flex;
+    animation: continuous-slide 25s infinite linear; /* 30s for slower transition */
+}
+
+/* Individual slides */
+.slide {
+    flex-shrink: 0;
+    margin: 0; /* No gaps between images */
+}
+
+/* Ensures original size for images */
+.slide img {
+    width: auto;
+    height: auto;
+    max-width: 100%; /* Prevents overflow beyond container width */
+    max-height: 100vh; /* Prevents overflow beyond container height */
+}
+
+/* Continuous sliding animation */
+@keyframes continuous-slide {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0); /* Pause at the first image */
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-100%); /* Pause at the second image */
+    }
+    60% {
+        transform: translateX(-200%);
+    }
+    70% {
+        transform: translateX(-200%); /* Pause at the third image */
+    }
+    85% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-400%); /* Continue to the duplicate image */
+    }
+}
+
+/* Navigation */
+nav {
+    background: #333;
+    color: white;
+    padding: 0.8rem 2rem;
+    position: fixed;
+    width: 96.6%;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo and Profile */
+nav .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f8f4f4;
+}
+
+nav .profile-logo {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    margin-right: 10px; /* Spacing between the logo and text */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Destinations Section */
+section {
+    padding: 4rem 2rem;
+}
+
+.destinations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding-top: 4rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.card p {
+    margin: 0 1rem 1rem;
+}
+
+/* Call-to-Action */
+.cta {
+    background: #ff9800;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cta h2 {
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer a {
+    color: #ff9800;
+    text-decoration: none;
+}
+/* Initial state for the page fade-in effect */
+body {
+    opacity: 0;
+    filter: blur(10px);
+    transition: opacity 0.8s ease, filter 0.8s ease;
+}
+
+/* When the page loads, remove blur and fade in */
+body.fade-in {
+    opacity: 1;
+    filter: blur(0);
+}
+
+/* Fade-out + blur effect for links */
+.fade-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.fade-overlay.fade-out {
+    opacity: 1;
+}
+

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide</title>
+    <link rel="stylesheet" href="travel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Background audio -->
+    <audio id="background-audio" autoplay loop>
+        <source src="travel guide music.mp3" type="audio/mpeg">
+        <source src="background-audio.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <nav>
+        <div class="logo">Travel Guide</div>
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="sign up.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <header id="image-slider">
+        <div class="slider-container">
+            <div class="slider">
+                <img class="slide" src="travel guide 1.webp".jpg" alt="Image 1">
+                <img class="slide" src="travel guide 2.jpg" alt="Image 2">
+                <img class="slide" src="travel guide 3.webp" alt="Image 3">
+                <img class="slide" src="travel guide 4.jpg" alt="Image 4">
+                <img class="slide" src="travel guide 1.webp" alt="Duplicate Image 1"> <!-- Duplicate first image -->
+            </div>
+        </div>        
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1>Your Adventure Awaits</h1>
+            <p>Explore the best destinations around the world</p>
+            <a href="#destinations">Explore Now</a>
+        </div>
+    </header>
+
+    <section id="destinations">
+        <h1>Popular Destinations</h1>
+        <div class="destinations">
+            <div class="card">
+                <a href="paris.html" class="fade-link" data-destination="paris.html">
+                    <img src="france.jpg" alt="Paris">
+                    <h3>Paris, France</h3>
+                    <p>The city of love awaits with its iconic Eiffel Tower and rich history.</p>
+                </a>
+            </div>                  
+            <div class="card">
+                <a href="tokyo.html" class="fade-link" data-destination="tokyo.html">
+                    <img src="tokyo.jpg" alt="Tokyo">
+                    <h3>Tokyo, Japan</h3>
+                    <p>Experience the blend of traditional culture and modern marvels.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="newyork.html" class="fade-link" data-destination="newyork.html">
+                    <img src="newyork.jpg" alt="New York">
+                    <h3>New York, USA</h3>
+                    <p>The city that never sleeps offers endless excitement and landmarks.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="rome.html" class="fade-link" data-destination="rome.html">
+                    <img src="rome.jpg" alt="Rome">
+                    <h3>Rome, Italy</h3>
+                    <p>Step into history with ancient ruins, beautiful architecture, and great cuisine.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="sydney.html" class="fade-link" data-destination="sydney.html">
+                    <img src="sydney.jpg" alt="Sydney">
+                    <h3>Sydney, Australia</h3>
+                    <p>Visit the iconic Sydney Opera House and enjoy stunning beaches.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="dubai.html" class="fade-link" data-destination="dubai.html">
+                    <img src="dubai.jpg" alt="Dubai">
+                    <h3>Dubai, UAE</h3>
+                    <p>Marvel at futuristic architecture and luxurious attractions.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="capetown.html" class="fade-link" data-destination="capetown.html">
+                    <img src="capetown.jpg" alt="Cape Town">
+                    <h3>Cape Town, South Africa</h3>
+                    <p>Enjoy breathtaking landscapes, wildlife, and vibrant culture.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="bali.html" class="fade-link" data-destination="bali.html">
+                    <img src="bali.jpg" alt="Bali">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Relax in paradise with beautiful beaches, temples, and lush greenery.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="istanbul.html" class="fade-link" data-destination="istanbul.html">
+                    <img src="istanbul.jpg" alt="Istanbul">
+                    <h3>Istanbul, Turkey</h3>
+                    <p>Discover a city where East meets West, full of history and charm.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="santorini.html" class="fade-link" data-destination="santorini.html">
+                    <img src="santorini.jpg" alt="Santorini">
+                    <h3>Santorini, Greece</h3>
+                    <p>Admire the stunning white-washed buildings and azure seas.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="riodejanerio.html" class="fade-link" data-destination="riodejanerio.html">
+                    <img src="rio de janeiro.jpeg" alt="Rio de Janeiro">
+                    <h3>Rio de Janeiro, Brazil</h3>
+                    <p>Explore vibrant beaches, lively carnivals, and stunning mountains.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="marrakech.html" class="fade-link" data-destination="marrakech.html">
+                    <img src="marrakech.jpg" alt="Marrakech">
+                    <h3>Marrakech, Morocco</h3>
+                    <p>Immerse yourself in colorful markets and enchanting palaces.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="bangkok.html" class="fade-link" data-destination="bangkok.html">
+                    <img src="bangkok.jpg" alt="Bangkok">
+                    <h3>Bangkok, Thailand</h3>
+                    <p>Discover a city with grand temples and bustling street markets.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="barcelona.html" class="fade-link" data-destination="barcelona.html">
+                    <img src="barcelona.jpg" alt="Barcelona">
+                    <h3>Barcelona, Spain</h3>
+                    <p>Marvel at Gaudi’s architecture and enjoy vibrant city life.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="vienna.html" class="fade-link" data-destination="vienna.html">
+                    <img src="vienna.jpeg" alt="Vienna">
+                    <h3>Vienna, Austria</h3>
+                    <p>Experience classical music, beautiful palaces, and coffee culture.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="seoul.html" class="fade-link" data-destination="seoul.html">
+                    <img src="seoul.jpg" alt="Seoul">
+                    <h3>Seoul, South Korea</h3>
+                    <p>A perfect blend of technology and tradition awaits you in Seoul.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="amsterdam.html" class="fade-link" data-destination="amsterdam.html">
+                    <img src="amsterdam.jpg" alt="Amsterdam">
+                    <h3>Amsterdam, Netherlands</h3>
+                    <p>Explore canals, art museums, and a rich cultural history.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="kyoto.html" class="fade-link" data-destination="kyoto.html">
+                    <img src="kyoto.jpg" alt="Kyoto">
+                    <h3>Kyoto, Japan</h3>
+                    <p>Visit serene temples and traditional tea houses in Kyoto.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="buenos aires.html" class="fade-link" data-destination="buenos aires.html">
+                    <img src="buenos aires.jpg" alt="Buenos Aires">
+                    <h3>Buenos Aires, Argentina</h3>
+                    <p>Experience the passion of tango, stunning architecture, and delicious food.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="prague.html" class="fade-link" data-destination="prague.html">
+                    <img src="prague.jpeg" alt="Prague">
+                    <h3>Prague, Czech Republic</h3>
+                    <p>Step into a fairy-tale city with beautiful bridges and cobbled streets.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="tamilnadu.html" class="fade-link" data-destination="tamilnadu.html">
+                    <img src="tamilnadu 2.jpg" alt="Tamil Nadu">
+                    <h3>Tamil Nadu, India</h3>
+                    <p>Explore the land of temples and vibrant culture.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="singapore.html" class="fade-link" data-destination="singapore.html">
+                    <img src="singapore1.jpg" alt="Singapore">
+                    <h3>Singapore</h3>
+                    <p>Discover the Lion City with its futuristic skyline and gardens.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="london.html" class="fade-link" data-destination="london.html">
+                    <img src="london1.jpg" alt="London">
+                    <h3>London, United Kingdom</h3>
+                    <p>Experience the charm of Big Ben, the British Museum, and more.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="swizerland.html" class="fade-link" data-destination="swizerland.html">
+                    <img src="swizz.jpg" alt="Switzerland">
+                    <h3>Switzerland</h3>
+                    <p>Immerse yourself in the scenic beauty of the Alps and serene lakes.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Travel Guide | 2025</p>
+        <p>Follow us: <a href="https://www.facebook.com/travelguidesfree">Facebook</a> | <a href="https://www.instagram.com/travelguidesfree?igsh=eWJpOXk0bjJtcDF5">Instagram</a> | <a href="https://x.com/TravelGuides1?t=kNfFYTIjDbgIBp-xi8G3Cw&s=09">Twitter</a></p>
+    </footer>
+    <script src="travel.js"></script>
+</body>
+
+</html>
